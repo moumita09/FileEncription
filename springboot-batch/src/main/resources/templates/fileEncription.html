@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en-gb">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"  crossorigin="anonymous"/>
+ <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" />
+<!-- <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css"
+    rel="stylesheet" /> -->
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script
+    src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script
+    src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script> 
+<script
+    src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+</head>
+
+<body>
+<form action="#" th:action="@{/invokejob}" th:object="${invokejob}" method="post" enctype="multipart/form-data">
+	<div id="wrapper">
+		<div class="card  card-authentication1 mx-auto my-5 animated zoomIn"
+			style="width: 50rem;">
+			<div class="card-body">
+		
+				<div class="card-content p-2">
+					<form action ="dates" method = "POST">
+						<div class="container">
+							<div class="row">
+								<div class='col-sm-4'>
+									<div class="form-group">`
+										
+										<div class='input-group '>
+											<input type='file' class="form-control" th:name ="startDate" />
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+							<div class='col-sm-2'></div>
+							<div class='col-sm-2'>
+							<button type="submit"  class="btn btn-primary">Submit</button>
+							</div>
+							<div class='col-sm-2'></div>
+							</div>
+						<div class="row">
+						</div>
+							
+							
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+</body>
+</html>	
+							
+							
+							
+							
+					
